@@ -1,0 +1,19 @@
+# git config --edit --global
+[alias]
+    confige = config --edit
+    configs = config --list
+
+    commit-init = commit --allow-empty
+    commitv = commit --verbose
+    commita = commitv --amend
+    commitan = commit --amend --no-edit
+    commitf = commit --fixup
+
+    rebasei = rebase --interactive
+
+    fetchp = fetch --prune
+
+    tags = tag --list
+
+    # https://stackoverflow.com/a/35075021
+    adog = log --all --decorate --oneline --graph
