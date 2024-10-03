@@ -9,7 +9,7 @@
     commitan = commit --amend --no-edit
     commitf = commit --fixup
 
-    rebasei = rebase --interactive
+    rebasei = rebase --interactive --autostash --autosquash
 
     fetchp = fetch --prune
 
