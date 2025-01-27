@@ -1,0 +1,5 @@
+# To-be-included git config file using `includeIf` config;
+# useful when multiple user name/email are desired for different repositories on a machine. 
+[user]
+    name = Leyvi Ni
+    email = other.email@example.com

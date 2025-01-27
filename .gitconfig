@@ -1,4 +1,5 @@
-# git config --edit --global
+# Global-scope git config file, usually locates at ~/.gitconfig.
+# Can be edited by: git config --edit --global
 [credential]
 	# used to store multiple tokens
 	# https://git-scm.com/docs/gitcredentials#Documentation/gitcredentials.txt-useHttpPath
@@ -33,10 +34,12 @@
 
 	logg = log --all --decorate=short --graph --pretty=tformat:'%C(yellow)%h%C(reset) %C(green)%ci%C(reset) %C(ul)%an%C(reset)%C(brightred)%d%C(reset) %C(brightyellow)%s%C(reset)'
 
-# [user]
-# 	name = Leyvi Ni
-# 	email = 
+#[user]
+#	name = Leyvi Ni
+#	email = 
 
-# used on machine that's mainly for work
-# [includeIf "hasconfig:remote.*.url:git@github.com:llskyhi/*"]
-# 	path = ~/.config/git/personal.gitconfig
+# Conditionally include another config file to overwrite some settings.
+# The following is used on machine that's mainly for work
+# but sometimes used for personal repositories.
+#[includeIf "hasconfig:remote.*.url:git@github.com:llskyhi/*"]
+#	path = ~/.config/git/personal.gitconfig
