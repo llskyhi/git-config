@@ -1,19 +1,42 @@
 # git config --edit --global
+[credential]
+	# used to store multiple tokens
+	# https://git-scm.com/docs/gitcredentials#Documentation/gitcredentials.txt-useHttpPath
+	useHttpPath = true
+
+[rebase]
+	autoSquash = true
+
 [alias]
-    confige = config --edit
-    configs = config --list
+	aliases = config --get-regexp ^alias\\.
 
-    commit-init = commit --allow-empty
-    commitv = commit --verbose
-    commita = commitv --amend
-    commitan = commit --amend --no-edit
-    commitf = commit --fixup
+	confige = config --edit
+	configs = config --list
 
-    rebasei = rebase --interactive --autostash --autosquash
+	commit-init = commit --allow-empty
+	commitv = commit --verbose
+	commita = commitv --amend
+	commitan = commit --amend --no-edit
+	commitf = commit --fixup
 
-    fetchp = fetch --prune
+	rebasei = rebase --interactive --autostash --autosquash
 
-    tags = tag --list
+	fetchp = fetch --prune
+	f = fetchp
 
-    # https://stackoverflow.com/a/35075021
-    adog = log --all --decorate --oneline --graph
+	stashu = stash --include-untracked
+
+	tags = tag --list
+
+	# https://stackoverflow.com/a/35075021
+	adog = log --all --decorate --oneline --graph
+
+	logg = log --all --decorate=short --graph --pretty=tformat:'%C(yellow)%h%C(reset) %C(green)%ci%C(reset) %C(ul)%an%C(reset)%C(brightred)%d%C(reset) %C(brightyellow)%s%C(reset)'
+
+# [user]
+# 	name = Leyvi Ni
+# 	email = leyvini@soetek.com.tw
+
+# used on machine that's mainly for work
+# [includeIf "hasconfig:remote.*.url:git@github.com:llskyhi/*"]
+# 	path = ~/personal.gitconfig
