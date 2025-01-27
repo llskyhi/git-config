@@ -35,8 +35,8 @@
 
 # [user]
 # 	name = Leyvi Ni
-# 	email = leyvini@soetek.com.tw
+# 	email = 
 
 # used on machine that's mainly for work
 # [includeIf "hasconfig:remote.*.url:git@github.com:llskyhi/*"]
-# 	path = ~/personal.gitconfig
+# 	path = ~/.config/git/personal.gitconfig
