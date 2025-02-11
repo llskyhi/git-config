@@ -32,7 +32,7 @@
 	# https://stackoverflow.com/a/35075021
 	adog = log --all --decorate --oneline --graph
 
-	logg = log --all --decorate=short --graph --pretty=tformat:'%C(yellow)%h%C(reset) %C(green)%ci%C(reset) %C(ul)%an%C(reset)%C(brightred)%d%C(reset) %C(brightyellow)%s%C(reset)'
+	logg = log --all --decorate=short --graph --pretty=tformat:'\t''%C(yellow)%h%C(reset) %C(green)%ci%C(reset) %C(ul)%an%C(reset)%C(brightred)%d%C(reset) %C(brightyellow)%s%C(reset)'
 
 #[user]
 #	name = Leyvi Ni
