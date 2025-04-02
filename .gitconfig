@@ -1,12 +1,43 @@
 # Global-scope git config file, usually locates at ~/.gitconfig.
 # Can be edited by: git config --edit --global
+
+# some of configs are from: https://blog.gitbutler.com/how-git-core-devs-configure-git/
+
+[core]
+#	editor = code --wait
+
 [credential]
 	# used to store multiple tokens
 	# https://git-scm.com/docs/gitcredentials#Documentation/gitcredentials.txt-useHttpPath
 	useHttpPath = true
 
+[commit]
+	verbose = true
+
+[tag]
+	sort = version:refname
+
+[diff]
+	algorithm = histogram
+	colorMoved = zebra
+	mnemonicPrefix = true
+	renames = true
+
+[merge]
+	# 'zdiff3' since Git 2.35.0; 'diff3' for earlier versions
+	conflictStyle = zdiff3
+
 [rebase]
 	autoSquash = true
+
+[fetch]
+	prune = true
+	pruneTags = true
+	# fetch from *all* remotes
+	all = true
+
+[help]
+	autocorrect = prompt
 
 [alias]
 	aliases = config --get-regexp ^alias\\.
@@ -15,15 +46,14 @@
 	configs = config --list
 
 	commit-init = commit --allow-empty
-	commitv = commit --verbose
-	commita = commitv --amend
+	commita = commit --amend
 	commitan = commit --amend --no-edit
 	commitf = commit --fixup
 
-	rebasei = rebase --interactive --autostash --autosquash
+	rebases = rebase --autostash
+	rebasei = rebases --interactive
 
-	fetchp = fetch --prune
-	f = fetchp
+	f = fetch
 
 	stashu = stash --include-untracked
 
