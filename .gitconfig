@@ -44,6 +44,8 @@
 
 	confige = config --edit
 	configs = config --list
+	
+	s = status
 
 	commit-init = commit --allow-empty
 	commita = commit --amend
