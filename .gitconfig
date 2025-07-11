@@ -78,6 +78,6 @@
 #	path = ~/.config/git/personal.gitconfig
 # Using SSH key pairs to access GitHub repositories always uses credential git@github.com,
 # which means exactly one SSH key would be active when multiple are used (each added in an account)
-# for loggin in as user "git", in default configuration, it results in that another key never suceed to work.
+# for loggin in as user "git", in default configuration, it results in that another key never seems to work.
 # A work around to this is using core.sshCommand config with like 'ssh -i ~./id_ed25519-GitHub-llskyhi.pub'.
 #	path = ~/.config/git/GitHub-llskyhi.gitconfig
