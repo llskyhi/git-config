@@ -24,6 +24,7 @@
 	renames = true
 
 [merge]
+	ff = false
 	# 'zdiff3' since Git 2.35.0; 'diff3' for earlier versions
 	conflictStyle = zdiff3
 
