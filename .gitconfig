@@ -68,8 +68,8 @@
 	# https://stackoverflow.com/a/35075021
 	adog = log --all --decorate --oneline --graph
 
-	logg = log --decorate=short --graph --pretty=tformat:'\t''%C(yellow)%h%C(reset) %C(green)%ci%C(reset) %C(ul)%an%C(reset)%C(brightred)%d%C(reset) %C(brightyellow)%s%C(reset)'
-	logga = logg --all
+	l = log --decorate=short --graph --pretty=tformat:'\t''%C(yellow)%h%C(reset) %C(green)%ci%C(reset) %C(ul)%an%C(reset)%C(brightred)%d%C(reset) %C(brightyellow)%s%C(reset)'
+	la = l --all
 
 #[user]
 #	name = Leyvi Ni
