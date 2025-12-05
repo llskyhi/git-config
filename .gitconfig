@@ -4,6 +4,7 @@
 # some of configs are from: https://blog.gitbutler.com/how-git-core-devs-configure-git/
 
 [core]
+	longpaths = true
 #	editor = code --wait
 
 [credential]
