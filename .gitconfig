@@ -49,11 +49,15 @@
 
 	confige = config --edit
 	configs = config --list
-	
+	configeg = confige --global
+	configel = confige --local
+
 	s = status
 
-	commit-init = commit --allow-empty
-	commita = commit --amend
+	shown = show --name-only
+
+	commit-init = commit --allow-empty --message 'Initial commit'
+	commita = commit --amend --allow-empty
 	commitan = commit --amend --no-edit
 	commitf = commit --fixup
 
@@ -61,6 +65,8 @@
 	rebasei = rebases --interactive
 
 	f = fetch
+
+	b = branch
 
 	stashu = stash --include-untracked
 
@@ -70,7 +76,7 @@
 	adog = log --all --decorate --oneline --graph
 
 	l = log --decorate=short --graph --pretty=tformat:'\t''%C(yellow)%h%C(reset) %C(green)%ci%C(reset) %C(ul)%an%C(reset)%C(brightred)%d%C(reset) %C(brightyellow)%s%C(reset)'
-	la = l --all
+    la = l --all
 
 #[user]
 #	name = Leyvi Ni
