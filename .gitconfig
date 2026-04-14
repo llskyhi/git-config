@@ -5,12 +5,21 @@
 
 [core]
 	longpaths = true
-#	editor = code --wait
+	autocrlf = true
+	ignorecase = false
+	symlinks = true
+	editor = code --wait
+	# https://superuser.com/questions/974078/what-does-the-filesystem-cache-do-in-windows-7
+	fscache = true
 
 [credential]
 	# used to store multiple tokens
 	# https://git-scm.com/docs/gitcredentials#Documentation/gitcredentials.txt-useHttpPath
 	useHttpPath = true
+	# TODO: This is from Git for Windows system config.
+	#       What are possible values?
+	#       Does this work also for MSYS2?
+	#helper = manager
 
 [commit]
 	verbose = true
@@ -41,6 +50,9 @@
 	# fetch from *all* remotes
 	all = true
 
+[pull]
+	rebase = true
+
 [help]
 	autocorrect = prompt
 
@@ -49,34 +61,31 @@
 
 	confige = config --edit
 	configs = config --list
-	configeg = confige --global
-	configel = confige --local
 
 	s = status
 
+	# https://stackoverflow.com/a/35075021
+	# adog = log --all --decorate --oneline --graph
+	l = log --decorate=short --graph --pretty=tformat:'\t''%C(yellow)%h%C(reset) %C(green)%ci%C(reset) %C(ul)%an%C(reset)%C(brightred)%d%C(reset) %C(brightyellow)%s%C(reset)'
+	la = l --all
+
 	shown = show --name-only
+
+	tags = tag --list
+
+	b = branch
 
 	commit-init = commit --allow-empty --message 'Initial commit'
 	commita = commit --amend --allow-empty
 	commitan = commit --amend --no-edit
 	commitf = commit --fixup
 
+	stashu = stash --include-untracked
+
 	rebases = rebase --autostash
 	rebasei = rebases --interactive
 
 	f = fetch
-
-	b = branch
-
-	stashu = stash --include-untracked
-
-	tags = tag --list
-
-	# https://stackoverflow.com/a/35075021
-	adog = log --all --decorate --oneline --graph
-
-	l = log --decorate=short --graph --pretty=tformat:'\t''%C(yellow)%h%C(reset) %C(green)%ci%C(reset) %C(ul)%an%C(reset)%C(brightred)%d%C(reset) %C(brightyellow)%s%C(reset)'
-    la = l --all
 
 #[user]
 #	name = Leyvi Ni

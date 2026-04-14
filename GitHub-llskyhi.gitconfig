@@ -1,2 +1,3 @@
 [core]
-	sshCommand = ssh -o IdentitiesOnly=yes -i "~/.ssh/id_ed25519-GitHub-llskyhi.pub"
+	# ssh or $GIT_SSH
+	sshCommand = "$GIT_SSH" -o IdentitiesOnly=yes -i "~/.ssh/id_ed25519-GitHub-llskyhi.pub"
