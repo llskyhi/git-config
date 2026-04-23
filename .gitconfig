@@ -9,6 +9,8 @@
 	ignorecase = false
 	symlinks = true
 	editor = code --wait
+	# https://stackoverflow.com/questions/34549040/git-not-displaying-unicode-file-names
+	quotePath = false
 	# https://superuser.com/questions/974078/what-does-the-filesystem-cache-do-in-windows-7
 	fscache = true
 
