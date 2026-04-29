@@ -3,6 +3,11 @@
 
 # some of configs are from: https://blog.gitbutler.com/how-git-core-devs-configure-git/
 
+[init]
+	# becoming the default in Git 3.0
+	# https://git-scm.com/docs/BreakingChanges#_git_3_0
+	defaultBranch = main
+
 [core]
 	longpaths = true
 	autocrlf = true
