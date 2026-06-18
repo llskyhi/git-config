@@ -86,6 +86,8 @@
 	commita = commit --amend --allow-empty
 	commitan = commit --amend --no-edit
 	commitf = commit --fixup
+	ca = commita
+	cf = commitf
 
 	stashu = stash --include-untracked
 
