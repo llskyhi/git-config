@@ -27,6 +27,8 @@
 	#       What are possible values?
 	#       Does this work also for MSYS2?
 	#helper = manager
+	# for MSYS2, requires package git-credential-wincred (of proper environment like UCRT64)
+	helper = wincred
 
 [commit]
 	verbose = true
@@ -81,6 +83,8 @@
 	tags = tag --list
 
 	b = branch
+
+	sw = switch
 
 	commit-init = commit --allow-empty --message 'Initial commit'
 	commita = commit --amend --allow-empty
