@@ -22,7 +22,7 @@
 [credential]
 	# used to store multiple tokens
 	# https://git-scm.com/docs/gitcredentials#Documentation/gitcredentials.txt-useHttpPath
-	useHttpPath = true
+	#useHttpPath = true
 	# TODO: This is from Git for Windows system config.
 	#       What are possible values?
 	#       Does this work also for MSYS2?
