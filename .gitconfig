@@ -54,10 +54,10 @@
 	rebaseMerges = no-rebase-cousins
 
 [fetch]
-	prune = true
-	pruneTags = true
 	# fetch from *all* remotes
 	all = true
+	# prune = true
+	# pruneTags = true
 
 [pull]
 	rebase = true
