@@ -73,6 +73,8 @@
 
 	s = status
 
+	diffst = diff --stat=10000 --stat-name-width=10000 --stat-graph-width=20
+
 	# https://stackoverflow.com/a/35075021
 	# adog = log --all --decorate --oneline --graph
 	l = log --decorate=short --graph --abbrev=8 --pretty=tformat:'\t''%C(yellow)%h%C(reset) %C(green)%ci%C(reset) %C(ul)%an%C(reset)%C(brightred)%d%C(reset) %C(brightyellow)%s%C(reset)'
