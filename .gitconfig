@@ -73,6 +73,7 @@
 
 	s = status
 
+	# https://stackoverflow.com/a/10460154/25956559
 	diffst = diff --stat=10000 --stat-name-width=10000 --stat-graph-width=20
 
 	# https://stackoverflow.com/a/35075021
