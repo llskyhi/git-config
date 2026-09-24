@@ -1,0 +1,19 @@
+# https://stackoverflow.com/a/22885996/25956559
+.env
+
+*.pyc
+__pycache__/
+
+node_modules/
+
+.vscode
+.idea/
+
+# AI agent
+AGENTS.local.md
+CLAUDE.local.md
+**/.claude/settings.local.json
+
+# personal usage
+.llskyhi/
+logs/

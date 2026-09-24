@@ -1,0 +1,10 @@
+# A git config file to be included mainly for using different SSH pubkey on single machine
+# for repositories on single site.
+# For instance, github.com uses "git@github.com:{USER_NAME}/{REPO_PATH}" as repo URL using SSH,
+# so technically you login as user "git" and GitHub distinguishes user via SSH pubkey used.
+# So, in case of multiple valid pubkey provided in ~/.ssh/ (each presents an user),
+# the first one wins and the remote operation you attempt to perform as second user never success
+# because Github will regard you as first user who (in usual case) has no permission to the repo that second user has permission to.
+[core]
+	# ssh or $GIT_SSH
+	sshCommand = "$GIT_SSH" -o IdentitiesOnly=yes -i "~/.ssh/id_ed25519-github-llskyhi.pub"

@@ -1,0 +1,18 @@
+# Per-machine git config file.
+# A machine may be used mainly for personal repos and sometimes for work; another may be opposite.
+# So ideally this config file should set main configs
+# and (optionally) some `includeif` sections.
+
+[user]
+	name = Leyvi Ni
+	# email = TODO
+
+# Conditionally include another config file to overwrite some settings.
+# The following is used on machine that's mainly for work
+# but sometimes used for personal repositories.
+[includeIf "hasconfig:remote.*.url:git@github.com:llskyhi/*"]
+	# Using SSH key pairs to access GitHub repositories always uses credential git@github.com,
+	# which means exactly one SSH key would be active when multiple are used (each added in an account)
+	# for loggin in as user "git", in default configuration, it results in that another key never seems to work.
+	# A work around to this is using core.sshCommand config with like 'ssh -i ~./id_ed25519-GitHub-llskyhi.pub'.
+	path = ~/.config/git/GitHub-llskyhi.gitconfig
