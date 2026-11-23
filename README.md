@@ -13,5 +13,10 @@ ln -s \
 cp \
     "${PWD}/per-machine.gitconfig.example" \
     ~/.config/git/per-machine.gitconfig
+
+#cp \
+#    "${PWD}/github-llskyhi.gitconfig.example" \
+#    ~/.config/git/github-llskyhi.gitconfig
+
 # don't forget to update the ~/.config/git/per-machine.gitconfig !
 ```
