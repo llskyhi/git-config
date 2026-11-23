@@ -1,7 +1,9 @@
 # Per-machine git config file.
-# A machine may be used mainly for personal repos and sometimes for work; another may be opposite.
-# So ideally this config file should set main configs
-# and (optionally) some `includeif` sections.
+# Machines may use most of shared configs and a few to customze.
+# For example, a machine may be used mainly for personal repos and sometimes for work; another may be opposite.
+
+[core]
+	# editor = code --wait
 
 [user]
 	name = Leyvi Ni
