@@ -18,17 +18,6 @@
 	# https://superuser.com/questions/974078/what-does-the-filesystem-cache-do-in-windows-7
 	fscache = true
 
-[credential]
-	# used to store multiple tokens
-	# https://git-scm.com/docs/gitcredentials#Documentation/gitcredentials.txt-useHttpPath
-	#useHttpPath = true
-	# TODO: This is from Git for Windows system config.
-	#       What are possible values?
-	#       Does this work also for MSYS2?
-	#helper = manager
-	# for MSYS2, requires package git-credential-wincred (of proper environment like UCRT64)
-	helper = wincred
-
 [commit]
 	verbose = true
 

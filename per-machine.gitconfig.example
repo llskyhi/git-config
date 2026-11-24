@@ -9,6 +9,20 @@
 	name = Leyvi Ni
 	# email = TODO
 
+[credential]
+	# used to store multiple tokens
+	# https://git-scm.com/docs/gitcredentials#Documentation/gitcredentials.txt-useHttpPath
+	#useHttpPath = true
+
+	# TODO: This is from Git for Windows system config.
+	#       What are possible values?
+	#       Does this work also for MSYS2?
+	#helper = manager
+	# for MSYS2, requires package git-credential-wincred (of proper environment like UCRT64)
+	#helper = wincred
+	# for Linux, seems there's no safe way to store credentials, but plaintext only (in ~/.git-credentials).
+	#helper = store
+
 # Conditionally include another config file to overwrite some settings.
 # The following is used on machine that's mainly for work
 # but sometimes used for personal repositories.
