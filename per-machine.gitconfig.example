@@ -5,6 +5,9 @@
 [core]
 	# editor = code --wait
 
+	# autocrlf = true # for Windows
+	autocrlf = input # for Linux
+
 [user]
 	name = Leyvi Ni
 	# email = TODO
